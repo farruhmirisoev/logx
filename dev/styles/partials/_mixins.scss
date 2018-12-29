@@ -1,0 +1,3 @@
+@mixin trans($side: all, $duration:0.3) {
+  transition: $side $duration+s ease-out 0s;
+}

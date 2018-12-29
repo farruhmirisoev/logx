@@ -1,0 +1,27 @@
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title
+            block title
+        block styles
+            link(href='./css/main.css', rel='stylesheet')
+            link(href='./assets/@fortawesome/fontawesome-free/css/all.css', rel='stylesheet')
+        block scripts
+            script(src='./js/jquery.min.js')
+            script(src='./js/script.js')
+    body
+        .wrapper
+            .mainbar.shadow--bottom
+                .mainbar__container
+                    block mainbar
+                    .fixed-sidebar
+                        block fixed-sidebar
+            .container
+                .main
+                    .main__top
+                        block main-top
+                    .main__body
+                        block main-body
+                .sidebar-second
+                    block sidebar-second

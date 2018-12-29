@@ -1,0 +1,32 @@
+{
+  "name": "okyolui",
+  "version": "1.0.0",
+  "description": "okyol ui",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.1"
+  },
+  "devDependencies": {
+    "gulp-plumber": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farruhmirisoev/okyol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farruhmirisoev/okyol/issues"
+  },
+  "homepage": "https://github.com/farruhmirisoev/okyol#readme"
+}

@@ -1,0 +1,41 @@
+a{
+  text-decoration: none;
+  color: $sub;
+}
+img{
+  max-width: 100%;
+}
+
+h1{
+  @include rem(font-size,30px);
+}
+h2{
+  @include rem(font-size,20px);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+h3{
+  @include rem(font-size,17px);
+}
+h4{
+  @include rem(font-size,15px);
+}
+h5{
+  @include rem(font-size,13px);
+}
+h6{
+  @include rem(font-size,9px);
+}
+
+.mod_center{
+  text-align: center;
+}
+.b{
+  &b{
+    border-bottom:1px solid $border;
+  }
+}
+
+.subtext{
+  color:$sub-3;
+}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okyol
+    </title>
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./assets/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="mainbar shadow--bottom">
+        <div class="mainbar__container"><a class="logo" href="#"><img src="./assets/img/logo.svg"></a>
+          <div class="select-location"><i class="icon-location"></i>
+            <div class="select-location__active">Узбекистан</div>
+          </div>
+          <!--.btn-switch-->
+          <!--    .btn.btn--active.btn--shadow Груз-->
+          <!--    .btn.btn--shadow Транспорт-->
+          <div class="actions"><a class="actions__item actions__item--active" href="#"><i class="fas fa-plus"></i></a><a class="actions__item" href="#"><i class="fas fa-bell"></i></a><a class="actions__item" href="#"><i class="icon-egg"></i></a>
+            <div class="actions__item">
+              <div class="profile-img"><img src="./assets/img/profile.jpg">
+                <div class="profile-dd">
+                  <div class="contentbox mb--s">
+                    <div class="profile-summery">
+                      <div class="profile-img profile-img--main mb"><img src="./assets/img/profile.jpg"></div>
+                      <h2 class="profile-summery__name mb">Konstantin Konstantinopolsky</h2>
+                      <div class="profile-summery__bullets mb--l">
+                        <div class="profile-summery__bullets-item">36</div>
+                        <div class="profile-summery__bullets-item">3</div>
+                        <div class="profile-summery__bullets-item"><i class="icon-checkmark"></i></div>
+                        <div class="profile-summery__bullets-item"><i class="fas fa-phone"></i></div>
+                      </div>
+                      <div class="badge badge--m">Pro</div>
+                      <div class="profile-summery__experience mt mb--l">до 25 окт, 2018</div>
+                      <ul class="links mb">
+                        <li class="links__item"><a href="#">Моя компания</a></li>
+                        <li class="links__item"><a href="#">Мои грузы</a></li>
+                        <li class="links__item"><a href="#">Мой транспорт</a></li>
+                        <li class="links__item"><a href="#">Настройки</a></li>
+                      </ul><a class="subtext" href="#">Выйти из системы</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fixed-sidebar">
+            <!--include ../elements/pin-button.pug-->
+            <div class="contentbox mb--s profile-card">
+              <div class="profile-summery">
+                <div class="profile-img profile-img--main"><img src="./assets/img/profile.jpg"></div>
+                <div class="badge">Pro</div>
+                <h2 class="profile-summery__name">Konstantin Konstantinopolsky</h2>
+                <div class="profile-summery__experience mt mb--l">на сайте 3 года</div>
+                <div class="profile-summery__bullets">
+                  <div class="profile-summery__bullets-item">36</div>
+                  <div class="profile-summery__bullets-item">3</div>
+                  <div class="profile-summery__bullets-item"><i class="icon-checkmark"></i></div>
+                  <div class="profile-summery__bullets-item"><i class="fas fa-phone"></i></div>
+                </div>
+              </div>
+              <div class="profile-details">
+                <!--.profile-details__stats-->
+                <!--    div-->
+                <!--        h2 36-->
+                <!--        div Отзывы-->
+                <!--    div-->
+                <!--        h2 3-->
+                <!--        div Сделки-->
+                <div class="profile-details__deals">
+                  <div class="profile-details__deals-item">
+                    <div class="profile-details__deals-icon"><i class="icon-cube-tp"></i></div>
+                    <div class="profile-details__deals-name">Мои грузы</div>
+                    <div class="profile-details__deals-quantity">3</div>
+                  </div>
+                  <div class="profile-details__deals-item">
+                    <div class="profile-details__deals-icon"><i class="icon-truck"></i></div>
+                    <div class="profile-details__deals-name">Мой транспорт</div>
+                    <div class="profile-details__deals-quantity">3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="status-button"><span>Временно занят</span>
+              <label class="switcher">
+                <input type="checkbox">
+                <div class="switcher__mask"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main">
+          <div class="main__top">
+          </div>
+          <div class="main__body">
+            <div class="tab-box mb--s">
+              <div class="tab-box__buttons"><a class="tab-box__button tab-box__button--active" tabid="tab-box__button--1">Поиск</a><a class="tab-box__button" tabid="tab-box__button--2">История поиска</a></div>
+              <div class="tab-box__container">
+                <div class="tab-box__content tab-box__content--active" id="tab-box__button--1">
+                  <div class="rowbox">
+                    <div class="col-3">
+                      <div class="btn-switch">
+                        <div class="btn btn--active btn--shadow">Груз</div>
+                        <div class="btn btn--shadow">Транспорт</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field-group">
+                    <div class="field-group__pair">
+                      <div class="field">
+                        <div class="field__label">Откуда</div>
+                        <input type="text" placeholder="Узбекистан">
+                      </div>
+                      <div class="field">
+                        <div class="field__label">Радиус</div>
+                        <input type="text" placeholder="100км">
+                      </div>
+                    </div>
+                    <div class="field-group__middle"><a class="icon-reset" href="#"></a></div>
+                    <div class="field-group__pair">
+                      <div class="field">
+                        <div class="field__label">Куда</div>
+                        <input type="text" placeholder="Узбекистан">
+                      </div>
+                      <div class="field">
+                        <div class="field__label">Радиус</div>
+                        <input type="text" placeholder="100км">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rowbox">
+                    <div class="col-2">
+                      <div class="field">
+                        <div class="field__label">Дата</div>
+                        <input type="text" placeholder="21, марта 2018">
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="field">
+                        <div class="field__label">Кузов</div>
+                        <div class="field__select">
+                          <select>
+                            <option>Рефрижиратор</option>
+                            <option>option 2</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="field">
+                        <label class="checkbox checkbox--active">
+                          <input type="checkbox" checked>
+                          <div class="checkicon"></div><span>Попутные заявки</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="field">
+                        <label class="checkbox">
+                          <input type="checkbox">
+                          <div class="checkicon"></div><span>ADR</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rowbox mb--no">
+                    <div class="col-2">
+                      <div class="field">
+                        <div class="field__label">Тонны</div>
+                        <input type="text" placeholder="от 0 – до 100">
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="field">
+                        <div class="field__label">Метры</div>
+                        <input type="text" placeholder="от 0 – до 100">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="field">
+                        <div class="field__label">Загрузка</div>
+                        <div class="field__select">
+                          <select>
+                            <option>Сзади</option>
+                            <option>option 2</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="field">
+                        <div class="field__label">Выгрузка</div>
+                        <div class="field__select">
+                          <select disabled>
+                            <option>Опция 1</option>
+                            <option>Опция 2</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-box__content" id="tab-box__button--2">Место для истории поиска</div>
+              </div>
+            </div>
+            <!--include blocks/search.pug-->
+            <!--paid-->
+            <div class="card-box card-box--paid">
+              <div class="card-box__flag">Платное</div>
+              <div class="card-box__info">
+                <div class="card-box__info-top">
+                  <div class="card-box__locs">
+                    <div class="card-box__loc card-box__loc--from">
+                      <div class="card-box__loc-title">Uzb</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                    <div class="card-box__locs-separator">
+                      <div class="card-box__locs-separator-icon"><i class="icon-truck"></i></div>
+                    </div>
+                    <div class="card-box__loc card-box__loc--to">
+                      <div class="card-box__loc-title">Rus</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                  </div>
+                  <div class="card-box__price">
+                    <div class="card-box__price-text">~ 5 000<span>&nbsp;км</span></div>
+                    <div class="card-box__price-subtitle">Дистанция</div>
+                  </div>
+                </div>
+                <div class="card-box__info-middle">
+                  <div class="card-box__info-content-bottom">
+                    <div class="grid-labels">
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">25 ноября</div>
+                          <div class="grid-label__sub">вторник</div>
+                        </div>
+                      </div>
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">Рефрижиратор</div>
+                          <div class="grid-label__sub">20т/86м³, Обуродование и части</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box__price">
+                      <div class="card-box__price-text">95 000 RUB</div>
+                      <div class="card-box__price-subtitle">Прямая оплата</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-box__info-footer">
+                  <div class="card-box__info-footer-moder">
+                    <div class="grid-label grid-label--center">
+                      <div class="grid-label__icon">
+                        <div class="profile-img profile-img--small"><img src="./assets/img/profile.jpg"></div>
+                      </div>
+                      <div class="grid-label__text">Phakamile Sikali</div>
+                    </div>
+                  </div>
+                  <div class="card-box__info-footer-created">2 часа назад</div>
+                  <div class="card-box__info-footer-replies">6 заявок</div>
+                  <div class="card-box__status"><i class="icon-bolt"></i><i class="icon-warranty"></i></div>
+                </div>
+              </div>
+              <div class="card-box__toggle"><i class="icon-arrow-down-bold"></i></div>
+            </div>
+            <!--free-->
+            <div class="card-box">
+              <div class="card-box__flag">Платное</div>
+              <div class="card-box__info">
+                <div class="card-box__info-top">
+                  <div class="card-box__locs">
+                    <div class="card-box__loc card-box__loc--from">
+                      <div class="card-box__loc-title">Uzb</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                    <div class="card-box__locs-separator">
+                      <div class="card-box__locs-separator-icon"><i class="icon-truck"></i></div>
+                    </div>
+                    <div class="card-box__loc card-box__loc--to">
+                      <div class="card-box__loc-title">Rus</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                  </div>
+                  <div class="card-box__price">
+                    <div class="card-box__price-text">~ 5 000<span>&nbsp;км</span></div>
+                    <div class="card-box__price-subtitle">Дистанция</div>
+                  </div>
+                </div>
+                <div class="card-box__info-middle">
+                  <div class="card-box__info-content-bottom">
+                    <div class="grid-labels">
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">25 ноября</div>
+                          <div class="grid-label__sub">вторник</div>
+                        </div>
+                      </div>
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">Рефрижиратор</div>
+                          <div class="grid-label__sub">20т/86м³, Обуродование и части</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box__price">
+                      <div class="card-box__price-text">95 000 RUB</div>
+                      <div class="card-box__price-subtitle">Прямая оплата</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-box__info-footer">
+                  <div class="card-box__info-footer-moder">
+                    <div class="grid-label grid-label--center">
+                      <div class="grid-label__icon">
+                        <div class="profile-img profile-img--small"><img src="./assets/img/profile.jpg"></div>
+                      </div>
+                      <div class="grid-label__text">Phakamile Sikali</div>
+                    </div>
+                  </div>
+                  <div class="card-box__info-footer-created">2 часа назад</div>
+                  <div class="card-box__info-footer-replies">6 заявок</div>
+                  <div class="card-box__status"><i class="icon-bolt"></i><i class="icon-warranty"></i></div>
+                </div>
+              </div>
+              <div class="card-box__toggle"><i class="icon-arrow-down-bold"></i></div>
+            </div>
+            <!--paid-->
+            <div class="card-box card-box--paid">
+              <div class="card-box__flag">Платное</div>
+              <div class="card-box__info">
+                <div class="card-box__info-top">
+                  <div class="card-box__locs">
+                    <div class="card-box__loc card-box__loc--from">
+                      <div class="card-box__loc-title">Uzb</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                    <div class="card-box__locs-separator">
+                      <div class="card-box__locs-separator-icon"><i class="icon-truck"></i></div>
+                    </div>
+                    <div class="card-box__loc card-box__loc--to">
+                      <div class="card-box__loc-title">Rus</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                  </div>
+                  <div class="card-box__price">
+                    <div class="card-box__price-text">~ 5 000<span>&nbsp;км</span></div>
+                    <div class="card-box__price-subtitle">Дистанция</div>
+                  </div>
+                </div>
+                <div class="card-box__info-middle">
+                  <div class="card-box__info-content-bottom">
+                    <div class="grid-labels">
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">25 ноября</div>
+                          <div class="grid-label__sub">вторник</div>
+                        </div>
+                      </div>
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">Рефрижиратор</div>
+                          <div class="grid-label__sub">20т/86м³, Обуродование и части</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box__price">
+                      <div class="card-box__price-text">95 000 RUB</div>
+                      <div class="card-box__price-subtitle">Прямая оплата</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-box__info-footer">
+                  <div class="card-box__info-footer-moder">
+                    <div class="grid-label grid-label--center">
+                      <div class="grid-label__icon">
+                        <div class="profile-img profile-img--small"><img src="./assets/img/profile.jpg"></div>
+                      </div>
+                      <div class="grid-label__text">Phakamile Sikali</div>
+                    </div>
+                  </div>
+                  <div class="card-box__info-footer-created">2 часа назад</div>
+                  <div class="card-box__info-footer-replies">6 заявок</div>
+                  <div class="card-box__status"><i class="icon-bolt"></i><i class="icon-warranty"></i></div>
+                </div>
+              </div>
+              <div class="card-box__toggle"><i class="icon-arrow-down-bold"></i></div>
+            </div>
+            <!--free-->
+            <div class="card-box">
+              <div class="card-box__flag">Платное</div>
+              <div class="card-box__info">
+                <div class="card-box__info-top">
+                  <div class="card-box__locs">
+                    <div class="card-box__loc card-box__loc--from">
+                      <div class="card-box__loc-title">Uzb</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                    <div class="card-box__locs-separator">
+                      <div class="card-box__locs-separator-icon"><i class="icon-truck"></i></div>
+                    </div>
+                    <div class="card-box__loc card-box__loc--to">
+                      <div class="card-box__loc-title">Rus</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                  </div>
+                  <div class="card-box__price">
+                    <div class="card-box__price-text">~ 5 000<span>&nbsp;км</span></div>
+                    <div class="card-box__price-subtitle">Дистанция</div>
+                  </div>
+                </div>
+                <div class="card-box__info-middle">
+                  <div class="card-box__info-content-bottom">
+                    <div class="grid-labels">
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">25 ноября</div>
+                          <div class="grid-label__sub">вторник</div>
+                        </div>
+                      </div>
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">Рефрижиратор</div>
+                          <div class="grid-label__sub">20т/86м³, Обуродование и части</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box__price">
+                      <div class="card-box__price-text">95 000 RUB</div>
+                      <div class="card-box__price-subtitle">Прямая оплата</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-box__info-footer">
+                  <div class="card-box__info-footer-moder">
+                    <div class="grid-label grid-label--center">
+                      <div class="grid-label__icon">
+                        <div class="profile-img profile-img--small"><img src="./assets/img/profile.jpg"></div>
+                      </div>
+                      <div class="grid-label__text">Phakamile Sikali</div>
+                    </div>
+                  </div>
+                  <div class="card-box__info-footer-created">2 часа назад</div>
+                  <div class="card-box__info-footer-replies">6 заявок</div>
+                  <div class="card-box__status"><i class="icon-bolt"></i><i class="icon-warranty"></i></div>
+                </div>
+              </div>
+              <div class="card-box__toggle"><i class="icon-arrow-down-bold"></i></div>
+            </div>
+            <div class="adbox mb--s">
+              <div class="adbox__text">
+                <div>Больше клиетнов и&nbsp;возможности с&nbsp;аккаунтом</div><a class="badge" href="#">Pro</a>
+              </div>
+              <div class="adbox__img"><img src="./assets/img/okyolad.png"></div>
+            </div>
+            <!--paid-->
+            <div class="card-box card-box--paid">
+              <div class="card-box__flag">Платное</div>
+              <div class="card-box__info">
+                <div class="card-box__info-top">
+                  <div class="card-box__locs">
+                    <div class="card-box__loc card-box__loc--from">
+                      <div class="card-box__loc-title">Uzb</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                    <div class="card-box__locs-separator">
+                      <div class="card-box__locs-separator-icon"><i class="icon-truck"></i></div>
+                    </div>
+                    <div class="card-box__loc card-box__loc--to">
+                      <div class="card-box__loc-title">Rus</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                  </div>
+                  <div class="card-box__price">
+                    <div class="card-box__price-text">~ 5 000<span>&nbsp;км</span></div>
+                    <div class="card-box__price-subtitle">Дистанция</div>
+                  </div>
+                </div>
+                <div class="card-box__info-middle">
+                  <div class="card-box__info-content-bottom">
+                    <div class="grid-labels">
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">25 ноября</div>
+                          <div class="grid-label__sub">вторник</div>
+                        </div>
+                      </div>
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">Рефрижиратор</div>
+                          <div class="grid-label__sub">20т/86м³, Обуродование и части</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box__price">
+                      <div class="card-box__price-text">95 000 RUB</div>
+                      <div class="card-box__price-subtitle">Прямая оплата</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-box__info-footer">
+                  <div class="card-box__info-footer-moder">
+                    <div class="grid-label grid-label--center">
+                      <div class="grid-label__icon">
+                        <div class="profile-img profile-img--small"><img src="./assets/img/profile.jpg"></div>
+                      </div>
+                      <div class="grid-label__text">Phakamile Sikali</div>
+                    </div>
+                  </div>
+                  <div class="card-box__info-footer-created">2 часа назад</div>
+                  <div class="card-box__info-footer-replies">6 заявок</div>
+                  <div class="card-box__status"><i class="icon-bolt"></i><i class="icon-warranty"></i></div>
+                </div>
+              </div>
+              <div class="card-box__toggle"><i class="icon-arrow-down-bold"></i></div>
+            </div>
+            <!--free-->
+            <div class="card-box">
+              <div class="card-box__flag">Платное</div>
+              <div class="card-box__info">
+                <div class="card-box__info-top">
+                  <div class="card-box__locs">
+                    <div class="card-box__loc card-box__loc--from">
+                      <div class="card-box__loc-title">Uzb</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                    <div class="card-box__locs-separator">
+                      <div class="card-box__locs-separator-icon"><i class="icon-truck"></i></div>
+                    </div>
+                    <div class="card-box__loc card-box__loc--to">
+                      <div class="card-box__loc-title">Rus</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                  </div>
+                  <div class="card-box__price">
+                    <div class="card-box__price-text">~ 5 000<span>&nbsp;км</span></div>
+                    <div class="card-box__price-subtitle">Дистанция</div>
+                  </div>
+                </div>
+                <div class="card-box__info-middle">
+                  <div class="card-box__info-content-bottom">
+                    <div class="grid-labels">
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">25 ноября</div>
+                          <div class="grid-label__sub">вторник</div>
+                        </div>
+                      </div>
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">Рефрижиратор</div>
+                          <div class="grid-label__sub">20т/86м³, Обуродование и части</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box__price">
+                      <div class="card-box__price-text">95 000 RUB</div>
+                      <div class="card-box__price-subtitle">Прямая оплата</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-box__info-footer">
+                  <div class="card-box__info-footer-moder">
+                    <div class="grid-label grid-label--center">
+                      <div class="grid-label__icon">
+                        <div class="profile-img profile-img--small"><img src="./assets/img/profile.jpg"></div>
+                      </div>
+                      <div class="grid-label__text">Phakamile Sikali</div>
+                    </div>
+                  </div>
+                  <div class="card-box__info-footer-created">2 часа назад</div>
+                  <div class="card-box__info-footer-replies">6 заявок</div>
+                  <div class="card-box__status"><i class="icon-bolt"></i><i class="icon-warranty"></i></div>
+                </div>
+              </div>
+              <div class="card-box__toggle"><i class="icon-arrow-down-bold"></i></div>
+            </div>
+            <!--paid-->
+            <div class="card-box card-box--paid">
+              <div class="card-box__flag">Платное</div>
+              <div class="card-box__info">
+                <div class="card-box__info-top">
+                  <div class="card-box__locs">
+                    <div class="card-box__loc card-box__loc--from">
+                      <div class="card-box__loc-title">Uzb</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                    <div class="card-box__locs-separator">
+                      <div class="card-box__locs-separator-icon"><i class="icon-truck"></i></div>
+                    </div>
+                    <div class="card-box__loc card-box__loc--to">
+                      <div class="card-box__loc-title">Rus</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                  </div>
+                  <div class="card-box__price">
+                    <div class="card-box__price-text">~ 5 000<span>&nbsp;км</span></div>
+                    <div class="card-box__price-subtitle">Дистанция</div>
+                  </div>
+                </div>
+                <div class="card-box__info-middle">
+                  <div class="card-box__info-content-bottom">
+                    <div class="grid-labels">
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">25 ноября</div>
+                          <div class="grid-label__sub">вторник</div>
+                        </div>
+                      </div>
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">Рефрижиратор</div>
+                          <div class="grid-label__sub">20т/86м³, Обуродование и части</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box__price">
+                      <div class="card-box__price-text">95 000 RUB</div>
+                      <div class="card-box__price-subtitle">Прямая оплата</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-box__info-footer">
+                  <div class="card-box__info-footer-moder">
+                    <div class="grid-label grid-label--center">
+                      <div class="grid-label__icon">
+                        <div class="profile-img profile-img--small"><img src="./assets/img/profile.jpg"></div>
+                      </div>
+                      <div class="grid-label__text">Phakamile Sikali</div>
+                    </div>
+                  </div>
+                  <div class="card-box__info-footer-created">2 часа назад</div>
+                  <div class="card-box__info-footer-replies">6 заявок</div>
+                  <div class="card-box__status"><i class="icon-bolt"></i><i class="icon-warranty"></i></div>
+                </div>
+              </div>
+              <div class="card-box__toggle"><i class="icon-arrow-down-bold"></i></div>
+            </div>
+            <!--free-->
+            <div class="card-box">
+              <div class="card-box__flag">Платное</div>
+              <div class="card-box__info">
+                <div class="card-box__info-top">
+                  <div class="card-box__locs">
+                    <div class="card-box__loc card-box__loc--from">
+                      <div class="card-box__loc-title">Uzb</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                    <div class="card-box__locs-separator">
+                      <div class="card-box__locs-separator-icon"><i class="icon-truck"></i></div>
+                    </div>
+                    <div class="card-box__loc card-box__loc--to">
+                      <div class="card-box__loc-title">Rus</div>
+                      <div class="card-box__loc-subtitle">Владимирская область</div>
+                    </div>
+                  </div>
+                  <div class="card-box__price">
+                    <div class="card-box__price-text">~ 5 000<span>&nbsp;км</span></div>
+                    <div class="card-box__price-subtitle">Дистанция</div>
+                  </div>
+                </div>
+                <div class="card-box__info-middle">
+                  <div class="card-box__info-content-bottom">
+                    <div class="grid-labels">
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">25 ноября</div>
+                          <div class="grid-label__sub">вторник</div>
+                        </div>
+                      </div>
+                      <div class="grid-label">
+                        <div class="grid-label__content">
+                          <div class="grid-label__text">Рефрижиратор</div>
+                          <div class="grid-label__sub">20т/86м³, Обуродование и части</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-box__price">
+                      <div class="card-box__price-text">95 000 RUB</div>
+                      <div class="card-box__price-subtitle">Прямая оплата</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-box__info-footer">
+                  <div class="card-box__info-footer-moder">
+                    <div class="grid-label grid-label--center">
+                      <div class="grid-label__icon">
+                        <div class="profile-img profile-img--small"><img src="./assets/img/profile.jpg"></div>
+                      </div>
+                      <div class="grid-label__text">Phakamile Sikali</div>
+                    </div>
+                  </div>
+                  <div class="card-box__info-footer-created">2 часа назад</div>
+                  <div class="card-box__info-footer-replies">6 заявок</div>
+                  <div class="card-box__status"><i class="icon-bolt"></i><i class="icon-warranty"></i></div>
+                </div>
+              </div>
+              <div class="card-box__toggle"><i class="icon-arrow-down-bold"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-second">
+          <!--include blocks/profile-card.pug-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

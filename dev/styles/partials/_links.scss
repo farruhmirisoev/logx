@@ -1,0 +1,10 @@
+.links{
+  &__item{
+    padding:$m 0;
+    @include rem(font-size,15px);
+    font-weight: bold;
+    &:not(:last-child){
+      border-bottom:1px solid $border;
+    }
+  }
+}

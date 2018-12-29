@@ -1,0 +1,22 @@
+.elm_create-account{
+  text-align: center;
+  .btn{
+    width: 100%;
+  }
+}
+.bullets__item{
+  @include trans(all);
+  &--gplus:hover{
+    background-color: #dd5348;
+  }
+  &--facebook:hover{
+    background-color: #3b5998;
+  }
+  &--ok:hover{
+    background-color: #f58220;
+  }
+}
+.init-creds__message{
+  line-height: 1.4;
+  color:#333A4A;
+}
