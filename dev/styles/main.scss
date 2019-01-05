@@ -1,26 +1,8 @@
-@import 'presets/reset';
 @import 'tools/rem';
-@import 'presets/margins';
-@import 'presets/variables';
-@import 'presets/presets';
+@import "bootsrap_custom";
 @import 'partials/fonts';
-@import 'partials/shadow';
 @import 'partials/mixins';
-@import 'partials/contentbox';
-@import 'partials/sidebar';
-@import 'partials/sidebar-second';
-@import 'partials/profile';
-@import 'partials/card-box';
-@import 'partials/buttons';
-@import 'partials/checkbox';
-@import 'partials/fields';
-@import 'partials/adbox';
 @import 'partials/mainbar';
-@import 'partials/actions';
-@import 'partials/init-cred';
-@import 'partials/bullets';
-@import 'partials/tab-box';
-@import 'partials/links';
 
 html{
   font-size: 81.3%;
@@ -28,49 +10,4 @@ html{
 }
 html, body{
   height: 100%;
-}
-body{
-  background: $bg-base;
-  font-family: 'SF Pro Display';
-}
-.wrapper{
-  display: flex;
-  flex-flow: column;
-}
-.container{
-  flex-grow: 1;
-  display: flex;
-  height: 100%;
-  width: $container;
-  margin-left:auto;
-  margin-right:auto;
-  padding:$ms;
-  margin-top:83px;
-}
-.main{
-  flex-grow: 1;
-  height:100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: column;
-  width: 730px;
-  &__body{
-    flex-grow: 1;
-    padding-right: $ms;
-    box-sizing: border-box;
-  }
-}
-.fas {
-  font-family: "FontAwesome";
-}
-.fa{
-  &--blue{
-    color:blue;
-  }
-  &--red{
-    color:red;
-  }
-  &--green{
-    color:green;
-  }
 }

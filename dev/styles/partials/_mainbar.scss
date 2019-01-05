@@ -1,71 +1,17 @@
 .mainbar{
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  &__container{
-    max-width: $container;
-    margin:0 auto;
-    padding:$m;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include trans(all);
-    position: relative;
-  }
-
-  .logo{
-    margin-right: 22px;
-  }
-  .actions{
-    width: 238px;
-    margin-left:auto;
-    &__item{
-      @include trans(color);
-      &:hover{
-        color:black;
-      }
-      &:first-child{
-        &:hover{
-          color:darken($green,10);
-        }
-      }
-    }
-  }
-
-
+  height: 241px;
+  background: rgb(16,113,227); /* Old browsers */
+  background: -moz-linear-gradient(45deg, rgba(16,113,227,1) 0%, rgba(0,168,234,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(16,113,227,1) 0%,rgba(0,168,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(16,113,227,1) 0%,rgba(0,168,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1071e3', endColorstr='#00a8ea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-.fixed-sidebar{
-  position: absolute;
-  right: $m;
-  top:93px;
-  width:238px;
-  box-sizing: border-box;
-  @include trans(all);
+.navbar-brand{
+  color:white;
 }
-
-
-
-
-.fixed{
-  .mainbar__container{
-    padding:10px 20px;
-  }
-  .fixed-sidebar{
-    top:73px;
+.nav-link{
+  color:rgba(255,255,255,0.5);
+  &:hover{
+    color:white;
   }
 }
-
-
-.select-location{
-  width: 162px;
-  display: flex;
-  align-items: center;
-  i{
-    margin-right:10px;
-    color:$blue;
-  }
-}
-

@@ -1,6 +1,0 @@
-.contentbox{
-  @extend .shadow--bottom;
-  background-color: $cardbox;
-  border-radius: 5px;
-  @include rem(padding,27px);
-}
