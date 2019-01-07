@@ -2,6 +2,7 @@
 /* import only the necessary Bootstrap files */
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
+
 /* -------begin customization-------- */
 $font-family-base:'SF Pro Display';
 $navbar-padding-y:rem(14);
@@ -9,6 +10,30 @@ $navbar-padding-x:rem(24);
 $navbar-nav-link-padding-x:rem(21);
 $border-color:rgba($white,0.2);
 $body-bg:#F2F2F2;
+
+$theme-colors: (
+  light-blue: #36AFED,
+  light-gray: #9B9B9B
+);
+
+$sizes: (
+  20: 20%
+);
+
+.dropdown.dropdown-dots .dropdown-toggle {
+  display: flex;
+}
+
+.dropdown.dropdown-dots .dropdown-toggle::after {
+  content: "\e234";
+  display: inline-block;
+  margin-left: 0.5em;
+  vertical-align: 0.255em;
+  border: none;
+  font-family: 'Glyphicons Halflings';
+
+}
+
 /* -------end customization-------- */
 /* finally, import Bootstrap to set the changes! */
 @import "../../node_modules/bootstrap/scss/bootstrap";
