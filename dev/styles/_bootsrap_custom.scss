@@ -6,14 +6,26 @@
 /* -------begin customization-------- */
 $font-family-base:'SF Pro Display';
 $navbar-padding-y:rem(14);
-$navbar-padding-x:rem(24);
+$navbar-padding-x:rem(0);
 $navbar-nav-link-padding-x:rem(21);
 $border-color:rgba($white,0.2);
 $body-bg:#F2F2F2;
 
 $theme-colors: (
   light-blue: #36AFED,
-  light-gray: #9B9B9B
+  light-gray: #9B9B9B,
+  gray-100:$gray-100,
+  gray-200:$gray-200,
+  gray-300:$gray-300,
+  gray-400:$gray-400,
+  gray-500:$gray-500,
+  gray-600:$gray-600,
+  gray-700:$gray-700,
+  gray-800:$gray-800,
+  gray-900:$gray-900,
+  sky:#00A8EA,
+  lime:#B8E986,
+  guideline:#50E3C2
 );
 
 $sizes: (
@@ -31,7 +43,11 @@ $sizes: (
   vertical-align: 0.255em;
   border: none;
   font-family: 'Glyphicons Halflings';
+}
 
+.dropdown-dots .btn:focus {
+  outline: none !important;
+  box-shadow: none;
 }
 
 /* -------end customization-------- */
