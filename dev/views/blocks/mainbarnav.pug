@@ -1,0 +1,23 @@
+.container-fluid.border-bottom
+    nav.navbar.navbar-expand-lg
+        a.navbar-brand(href='#') logx
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+            ul.navbar-nav.mr-auto
+                li.nav-item.active
+                    a.nav-link(href='#')
+                        | Accounting
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='#') Sales
+                li.nav-item.dropdown
+                    a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                        | Humans
+                    .dropdown-menu(aria-labelledby='navbarDropdown')
+                        a.dropdown-item(href='#') Action
+                        a.dropdown-item(href='#') Another action
+                        .dropdown-divider
+                        a.dropdown-item(href='#') Something else here
+            .bg-white.p-2.rounded-circle
+                .icon-bell.text-light-blue

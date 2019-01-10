@@ -1,0 +1,11 @@
+.search-container{
+  position: relative;
+  .form-control{
+    padding-right: 50px;
+  }
+  .btn{
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+}
