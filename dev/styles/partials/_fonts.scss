@@ -51,6 +51,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-dots:before {
+  content: "\e915";
+  color: #fff;
+}
 .icon-warning-shield .path1:before {
   content: "\e917";
   color: rgb(233, 46, 69);
@@ -67,7 +71,6 @@
 }
 .icon-cube-tp:before {
   content: "\e90d";
-  font-size: 17px;
 }
 .icon-location:before {
   content: "\e90e";
@@ -95,14 +98,9 @@
 .icon-checkmark:before {
   content: "\e90c";
   color: #26b365;
-  font-size: 10px;
 }
 .icon-settings:before {
   content: "\e914";
-}
-.icon-bell:before {
-  content: "\e915";
-  color: #9b9b9b;
 }
 .icon-arrow-up:before {
   content: "\e909";
@@ -127,6 +125,11 @@
 .icon-upload:before {
   content: "\e904";
 }
+.icon-bell:before {
+  content: "\e91a";
+  color: #fff;
+  vertical-align: middle;
+}
 .icon-phone:before {
   content: "\e916";
   color: #26b365;
@@ -137,6 +140,7 @@
 }
 .icon-egg:before {
   content: "\e90b";
+  color: #c4c4c4;
 }
 .icon-warranty:before {
   content: "\e906";

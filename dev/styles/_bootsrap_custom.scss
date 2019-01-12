@@ -9,7 +9,7 @@ $navbar-padding-y:rem(14);
 $navbar-padding-x:rem(0);
 $navbar-nav-link-padding-x:rem(21);
 $border-color:rgba($white,0.2);
-$body-bg:#F2F2F2;
+$body-bg:#FAFBFD;
 
 $theme-colors: (
   light-blue: #36AFED,
@@ -32,17 +32,37 @@ $sizes: (
   20: 20%
 );
 
+$spacers:(
+  45: rem(30),
+);
+
 .dropdown.dropdown-dots .dropdown-toggle {
   display: flex;
 }
 
 .dropdown.dropdown-dots .dropdown-toggle::after {
-  content: "\e234";
+  content: "\e915";
   display: inline-block;
   margin-left: 0.5em;
   vertical-align: 0.255em;
   border: none;
-  font-family: 'Glyphicons Halflings';
+  font-family: 'icomoon';
+  font-size: 4px;
+  margin-left: rem(10);
+}
+
+.navbar-nav .dropdown-toggle::after{
+  content: "\f078";
+  display: inline-block;
+  margin-left: 0.5em;
+  vertical-align: 0.255em;
+  border: none;
+  font-family: 'fontawesome';
+  font-size: rem(9);
+  vertical-align: text-top;
+}
+.navbar-brand{
+  padding-right: rem(21);
 }
 
 .dropdown-dots .btn:focus {
@@ -50,6 +70,22 @@ $sizes: (
   box-shadow: none;
 }
 
+.rounded-square{
+  width: 30px;
+  height: 30px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+h2{
+  font-size: rem(25);
+}
+
+$btn-border-radius:rem(5);
+$btn-padding-x:rem(12);
 /* -------end customization-------- */
 /* finally, import Bootstrap to set the changes! */
 @import "../../node_modules/bootstrap/scss/bootstrap";
