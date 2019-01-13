@@ -13,3 +13,13 @@ html{
 html, body{
   height: 100%;
 }
+
+.charts{
+  &>.row>*[class^=col]>.rounded{
+    padding:rem(20) rem(26) 0 rem(26);
+  }
+}
+.chart-details{
+  height: 230px;
+  overflow: auto;
+}
