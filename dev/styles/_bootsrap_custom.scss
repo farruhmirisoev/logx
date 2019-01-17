@@ -11,6 +11,10 @@ $navbar-nav-link-padding-x:rem(21);
 $border-color:rgba($white,0.2);
 $body-bg:#FAFBFD;
 
+$grid-breakpoints:(
+  xl:1440px
+);
+
 $theme-colors: (
   light-blue: #36AFED,
   light-gray: #9B9B9B,
